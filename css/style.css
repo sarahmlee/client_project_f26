@@ -15,12 +15,12 @@ nav a:focus {
 .skip {
     position: absolute;
     top: -65px;
+    background-color: #FFCB05;
+    color: #00274C;
 }
 
 .skip:focus {
     top: 25px;
-    background-color: #FFCB05;
-    color: #00274C;
 }
 
 body {
