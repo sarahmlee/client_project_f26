@@ -16,9 +16,9 @@
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
-                <li><a href = "preparation.html">Preparing for Your Experience</a></li>
-                <li><a href = "starting.html">Starting Your Experience</a></li>
-                <li><a href = "resources.html">Campus Partner Resources</a></li>
+                <li><a href = "preparation.html">Preparation</a></li>
+                <li><a href = "starting.html">Starting</a></li>
+                <li class="active"><a href = "resources.html">Resources</a></li>
             </ul>
         </nav>
     </header>
@@ -62,9 +62,9 @@
         <a href="mailto:umsi.engagement@umich.edu"> Contact Us By Email</a>
         </address>
     </div>
-
-    <p class="copyright">
-        &copy; 2026 Regents of the University of Michigan
-    </p>
+    <p>© Copyrights <span id="year"></span> by Regents of the University of Michigan. All rights reserved.</p>
+    <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
     </footer>
 </body>
