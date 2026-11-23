@@ -242,6 +242,10 @@ footer .copyright {
         padding: 20px;
     }
 
+    body a {
+        color: #0075bc;
+    }
+
     .grid--1,
     .grid--2,
     .grid--3,
@@ -304,5 +308,90 @@ footer .copyright {
         text-decoration: underline;
         background-color: #00274C;
         color: #FFCB05;
-}
+    }
+
+    .grid--6 article {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .prep--1,
+    .prep--2,
+    .prep--3,
+    .prep--4,
+    .prep--5,
+    .prep--6,
+    .prep--7 {
+        grid-column: 2 / 9;
+        margin-bottom: 24px;
+    }
+
+    .prep--5 {
+        background-color: #FFCB05;
+        color: #00274C;
+        padding: 5%;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        padding: 20px;
+        align-items: center;
+        overflow-wrap: anywhere;
+        background-color: #00274C;
+        color: white;
+    }
+
+    footer > img {
+        grid-column: 1;
+        display: block;
+        width: 120px;
+        max-width: 100%;
+        height: auto;
+        justify-self: center;
+    }
+
+    .footer-info {
+        grid-column: 2 / 4;
+        border-right: 1px solid #85a195;
+    }
+
+    .footer-info p {
+        margin-bottom: 8px;
+        line-height: 1.5;
+    }
+
+    footer address a {
+        text-decoration: none;
+        color: #FFCB05;
+    }
+
+    footer address a:hover,
+    footer address a:focus {
+        text-decoration: underline;
+        color: white;
+    }
+
+    .footer-nav {
+        grid-column: 4 / -1;
+        padding-left: 16px;
+    }
+
+    .footer-nav a {
+        text-decoration: none;
+        color: #FFCB05;
+        padding-bottom: 24px;
+    }
+
+    .footer-nav a:hover,
+    .footer-nav a:focus {
+        text-decoration: underline;
+        color: white;
+    }
+
+    footer .copyright {
+        grid-column: 1 / 5;
+        padding-left: 5%;
+    }
 }
